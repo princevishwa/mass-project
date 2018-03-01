@@ -1,7 +1,7 @@
 node {
     stage('Git Checkout') { // for display purposes
      echo 'Checout Code and clone it inside jenkins workspace.'
-     git 'https://github.com/princevishwa/mass-project.git'
+     git 'https://github.com/princevishwa/mass-project.git.'
    }
    stage('Build Test & Package') {
       echo 'Build the package'
