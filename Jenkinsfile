@@ -3,7 +3,7 @@ node {
      echo 'Checout Code and clone it inside jenkins workspace.'
      git 'https://github.com/princevishwa/mass-project.git'
    }
-   stage('Build Test & Package') {
+   stage('Build compile & Test & Package') {
       echo 'Build the package'
       sh 'mvn clean compile package'
    }
